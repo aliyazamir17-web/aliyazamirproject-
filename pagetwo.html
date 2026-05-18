@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:linear-gradient(to right,#fff0f5,#ffe4e1,#fff5ee);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:40px;
+    }
+
+    .about-section{
+      width:100%;
+      max-width:1200px;
+      background:#fff;
+      border-radius:30px;
+      overflow:hidden;
+      box-shadow:0 10px 35px rgba(0,0,0,0.12);
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+      align-items:center;
+    }
+
+    .about-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .about-content{
+      padding:50px;
+    }
+
+    .small-title{
+      color:#e91e63;
+      font-size:18px;
+      font-weight:600;
+      margin-bottom:10px;
+      letter-spacing:1px;
+      text-transform:uppercase;
+    }
+
+    .main-title{
+      font-size:42px;
+      color:#c2185b;
+      margin-bottom:20px;
+      line-height:1.2;
+      font-weight:700;
+    }
+
+    .description{
+      color:#666;
+      font-size:16px;
+      line-height:1.9;
+      margin-bottom:25px;
+    }
+
+    .features{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:15px;
+      margin-bottom:30px;
+    }
+
+    .feature-box{
+      background:#fff0f5;
+      padding:15px;
+      border-radius:15px;
+      text-align:center;
+      transition:0.3s;
+    }
+
+    .feature-box:hover{
+      transform:translateY(-5px);
+      background:#ffe4ec;
+    }
+
+    .feature-box h3{
+      color:#d81b60;
+      font-size:18px;
+      margin-bottom:5px;
+    }
+
+    .feature-box p{
+      color:#777;
+      font-size:14px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 35px;
+      border-radius:40px;
+      text-decoration:none;
+      background:linear-gradient(to right,#ff4081,#e91e63);
+      color:#fff;
+      font-size:16px;
+      font-weight:600;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:linear-gradient(to right,#e91e63,#c2185b);
+      transform:scale(1.05);
+    }
+
+    @media(max-width:768px){
+      .about-content{
+        padding:30px;
+      }
+
+      .main-title{
+        font-size:32px;
+      }
+
+      .features{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="about-section">
+
+    <div class="about-image">
+      <img src="https://images.unsplash.com/photo-1525310072745-f49212b5ac6d?q=80&w=1200&auto=format&fit=crop" alt="Flower Shop">
+    </div>
+
+    <div class="about-content">
+      <h4 class="small-title">About Our Flower Shop</h4>
+
+      <h1 class="main-title">
+        Fresh Flowers With Love & Beauty
+      </h1>
+
+      <p class="description">
+        Welcome to our flower shop where beauty meets freshness. We provide premium quality flowers for birthdays, weddings, anniversaries, and special events. Our flowers are carefully selected to bring happiness, elegance, and fragrance into your life.
+      </p>
+
+      <p class="description">
+        We offer modern flower bouquets, luxury floral boxes, and customized arrangements with many beautiful colors and styles. Customer satisfaction and fresh quality are always our first priority.
+      </p>
+
+      <div class="features">
+
+        <div class="feature-box">
+          <h3>100% Fresh</h3>
+          <p>Daily fresh flowers with premium quality.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>Fast Delivery</h3>
+          <p>Quick and safe flower delivery service.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>Luxury Design</h3>
+          <p>Beautiful modern floral arrangements.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3>Best Prices</h3>
+          <p>Affordable flowers with elegant style.</p>
+        </div>
+
+      </div>
+
+      <a href="#" class="btn">Read More</a>
+
+    </div>
+
+  </section>
+
+</body>
+</html>

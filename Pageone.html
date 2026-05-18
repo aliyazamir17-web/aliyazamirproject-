@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flower Products</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:linear-gradient(to right,#fff0f5,#ffe4e1,#fff5ee);
+      padding:40px;
+    }
+
+    .title{
+      text-align:center;
+      font-size:42px;
+      color:#c2185b;
+      margin-bottom:40px;
+      font-weight:700;
+    }
+
+    .products{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,0.12);
+      transition:0.4s ease;
+      position:relative;
+    }
+
+    .card:hover{
+      transform:translateY(-10px) scale(1.02);
+    }
+
+    .card img{
+      width:100%;
+      height:300px;
+      object-fit:cover;
+    }
+
+    .content{
+      padding:20px;
+    }
+
+    .content h2{
+      color:#d81b60;
+      font-size:24px;
+      margin-bottom:10px;
+    }
+
+    .price{
+      font-size:22px;
+      font-weight:700;
+      color:#4caf50;
+      margin-bottom:12px;
+    }
+
+    .desc{
+      color:#666;
+      font-size:14px;
+      line-height:1.6;
+      margin-bottom:15px;
+    }
+
+    .colors{
+      display:flex;
+      gap:10px;
+      margin-bottom:18px;
+    }
+
+    .color{
+      width:22px;
+      height:22px;
+      border-radius:50%;
+      border:2px solid #ddd;
+      cursor:pointer;
+    }
+
+    .btn{
+      width:100%;
+      padding:12px;
+      border:none;
+      border-radius:12px;
+      background:linear-gradient(to right,#ff4081,#e91e63);
+      color:white;
+      font-size:16px;
+      font-weight:600;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:linear-gradient(to right,#e91e63,#c2185b);
+    }
+
+    .tag{
+      position:absolute;
+      top:15px;
+      left:15px;
+      background:#ff4081;
+      color:white;
+      padding:7px 14px;
+      border-radius:30px;
+      font-size:13px;
+      font-weight:600;
+    }
+
+    @media(max-width:768px){
+      body{
+        padding:20px;
+      }
+
+      .title{
+        font-size:32px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="title">Beautiful Flower Products</h1>
+
+  <div class="products">
+
+    <div class="card">
+      <span class="tag">Best Seller</span>
+      <img src="https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=1200&auto=format&fit=crop" alt="Rose Bouquet">
+      <div class="content">
+        <h2>Rose Bouquet</h2>
+        <p class="price">$35</p>
+        <p class="desc">Luxury red roses bouquet with fresh fragrance and elegant wrapping.</p>
+        <div class="colors">
+          <div class="color" style="background:red"></div>
+          <div class="color" style="background:pink"></div>
+          <div class="color" style="background:white"></div>
+          <div class="color" style="background:yellow"></div>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">New</span>
+      <img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551?q=80&w=1200&auto=format&fit=crop" alt="Tulip Flowers">
+      <div class="content">
+        <h2>Tulip Collection</h2>
+        <p class="price">$28</p>
+        <p class="desc">Fresh tulip flowers available in multiple premium colors and styles.</p>
+        <div class="colors">
+          <div class="color" style="background:purple"></div>
+          <div class="color" style="background:orange"></div>
+          <div class="color" style="background:pink"></div>
+          <div class="color" style="background:yellow"></div>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Hot</span>
+      <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?q=80&w=1200&auto=format&fit=crop" alt="Sunflower">
+      <div class="content">
+        <h2>Sunflower Pack</h2>
+        <p class="price">$22</p>
+        <p class="desc">Bright sunflower arrangement perfect for gifts and home decoration.</p>
+        <div class="colors">
+          <div class="color" style="background:gold"></div>
+          <div class="color" style="background:orange"></div>
+          <div class="color" style="background:brown"></div>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Premium</span>
+      <img src="https://images.unsplash.com/photo-1455659817273-f96807779a8a?q=80&w=1200&auto=format&fit=crop" alt="Lily Flowers">
+      <div class="content">
+        <h2>Lily Basket</h2>
+        <p class="price">$40</p>
+        <p class="desc">Elegant lily basket with soft petals and luxury decoration wrapping.</p>
+        <div class="colors">
+          <div class="color" style="background:white"></div>
+          <div class="color" style="background:lightpink"></div>
+          <div class="color" style="background:violet"></div>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Fresh</span>
+      <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?q=80&w=1200&auto=format&fit=crop" alt="Orchid">
+      <div class="content">
+        <h2>Orchid Vase</h2>
+        <p class="price">$48</p>
+        <p class="desc">Beautiful orchid vase arrangement for weddings and luxury events.</p>
+        <div class="colors">
+          <div class="color" style="background:purple"></div>
+          <div class="color" style="background:white"></div>
+          <div class="color" style="background:deeppink"></div>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Popular</span>
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format&fit=crop" alt="Daisy">
+      <div class="content">
+        <h2>Daisy Flowers</h2>
+        <p class="price">$18</p>
+        <p class="desc">Cute daisy flower bouquet with refreshing natural beauty and scent.</p>
+        <div class="colors">
+          <div class="color" style="background:white"></div>
+          <div class="color" style="background:yellow"></div>
+          <div class="color" style="background:pink"></div>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Luxury</span>
+      <img src="https://images.unsplash.com/photo-1462275646964-a0e3386b89fa?q=80&w=1200&auto=format&fit=crop" alt="Mixed Flowers">
+      <div class="content">
+        <h2>Mixed Bouquet</h2>
+        <p class="price">$55</p>
+        <p class="desc">Combination of premium flowers with colorful wrapping and ribbons.</p>
+        <div class="colors">
+          <div class="color" style="background:red"></div>
+          <div class="color" style="background:blue"></div>
+          <div class="color" style="background:yellow"></div>
+          <div class="color" style="background:pink"></div>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Special</span>
+      <img src="https://images.unsplash.com/photo-1447877085163-3cce903855cd?q=80&w=1200&auto=format&fit=crop" alt="Lavender">
+      <div class="content">
+        <h2>Lavender Pack</h2>
+        <p class="price">$32</p>
+        <p class="desc">Relaxing lavender flowers with calming fragrance and elegant design.</p>
+        <div class="colors">
+          <div class="color" style="background:purple"></div>
+          <div class="color" style="background:lavender"></div>
+          <div class="color" style="background:plum"></div>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Elegant</span>
+      <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?q=80&w=1200&auto=format&fit=crop" alt="Peony">
+      <div class="content">
+        <h2>Peony Flowers</h2>
+        <p class="price">$45</p>
+        <p class="desc">Soft peony flower collection with premium petals and rich colors.</p>
+        <div class="colors">
+          <div class="color" style="background:pink"></div>
+          <div class="color" style="background:hotpink"></div>
+          <div class="color" style="background:white"></div>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag">Trending</span>
+      <img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?q=80&w=1200&auto=format&fit=crop" alt="Carnation">
+      <div class="content">
+        <h2>Carnation Box</h2>
+        <p class="price">$30</p>
+        <p class="desc">Stylish carnation flower box with modern premium gift packaging.</p>
+        <div class="colors">
+          <div class="color" style="background:red"></div>
+          <div class="color" style="background:crimson"></div>
+          <div class="color" style="background:pink"></div>
+          <div class="color" style="background:white"></div>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
