@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Reviews</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:linear-gradient(to right,#fff0f5,#ffe4e1,#fff5ee);
+      padding:50px;
+    }
+
+    .heading{
+      text-align:center;
+      margin-bottom:50px;
+    }
+
+    .heading h1{
+      font-size:45px;
+      color:#c2185b;
+      margin-bottom:10px;
+    }
+
+    .heading p{
+      color:#777;
+      font-size:16px;
+    }
+
+    .review-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:30px;
+      max-width:1300px;
+      margin:auto;
+    }
+
+    .review-card{
+      background:#fff;
+      padding:30px;
+      border-radius:25px;
+      box-shadow:0 10px 25px rgba(0,0,0,0.12);
+      transition:0.4s;
+      position:relative;
+      overflow:hidden;
+    }
+
+    .review-card:hover{
+      transform:translateY(-10px);
+    }
+
+    .quote{
+      position:absolute;
+      top:15px;
+      right:20px;
+      font-size:70px;
+      color:#ffd1e1;
+      font-weight:bold;
+    }
+
+    .profile{
+      display:flex;
+      align-items:center;
+      gap:15px;
+      margin-bottom:20px;
+    }
+
+    .profile img{
+      width:75px;
+      height:75px;
+      border-radius:50%;
+      object-fit:cover;
+      border:4px solid #ffb6c1;
+    }
+
+    .profile h3{
+      color:#d81b60;
+      font-size:22px;
+      margin-bottom:5px;
+    }
+
+    .stars{
+      color:#ffc107;
+      font-size:18px;
+    }
+
+    .review-text{
+      color:#666;
+      line-height:1.8;
+      font-size:15px;
+      margin-top:10px;
+    }
+
+    @media(max-width:768px){
+      body{
+        padding:20px;
+      }
+
+      .heading h1{
+        font-size:34px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="heading">
+    <h1>Customer Reviews</h1>
+    <p>What our lovely customers say about our flowers</p>
+  </div>
+
+  <div class="review-container">
+
+    <div class="review-card">
+      <div class="quote">”</div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+        <div>
+          <h3>Sarah Khan</h3>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="review-text">
+        The flowers were absolutely fresh and beautifully packed. I ordered roses for my sister and she loved them so much.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="quote">”</div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+        <div>
+          <h3>Ahmed Ali</h3>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="review-text">
+        Amazing flower quality and fast delivery service. The bouquet design looked premium and elegant.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="quote">”</div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer">
+        <div>
+          <h3>Ayesha Noor</h3>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="review-text">
+        Best flower shop ever. Their tulips and lilies are very beautiful and long lasting. Highly recommended.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="quote">”</div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/men/51.jpg" alt="Customer">
+        <div>
+          <h3>Usman Tariq</h3>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="review-text">
+        Excellent service with affordable prices. The flower colors were vibrant and very fresh.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="quote">”</div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="Customer">
+        <div>
+          <h3>Zara Malik</h3>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="review-text">
+        I ordered orchids for a wedding event and everyone loved the decoration. Truly outstanding quality.
+      </p>
+    </div>
+
+    <div class="review-card">
+      <div class="quote">”</div>
+      <div class="profile">
+        <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Customer">
+        <div>
+          <h3>Hamza Raza</h3>
+          <div class="stars">★★★★★</div>
+        </div>
+      </div>
+      <p class="review-text">
+        Beautiful packaging, fresh flowers, and excellent customer support. Definitely ordering again.
+      </p>
+    </div>
+
+  </div>
+
+</body>
+</html>
